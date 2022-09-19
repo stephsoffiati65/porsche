@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Porsche</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="custom-cursor"></div>
+
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#discover">A propos</a>
+      <a href="#models">Modèles</a>
+      <a href="#contacts">Contact</a>
+    </nav>
+
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <h1 aria-label="Porsche, libérez-vous."></h1>
+        <p class="subtitle">Réapprenez à conduire.</p>
+      </div>
+      <a href="#discover" class="hero-push-link">
+        <img src="ressources/down-arrow.svg" alt="arrow down" />
+      </a>
+    </section>
+
+    <main class="container">
+      <section id="discover" class="discover-section">
+        <h2>Ressentez la<span> route</span></h2>
+        <p class="section-subtitle discover-subtitle">Vous n'avez jamais vécu ça.</p>
+
+        <div class="discover-content">
+          <div class="text-discover-content">
+            <h3></h3>
+            <p>
+              Venez découvrir nos meilleurs modèles, les essayer et ressentir la route comme jamais vous ne l'avez ressenti !
+              Plus que le simple essai d'une voiture quelconque, vous allez découvrir la liberté extraordinaoire que vous procure le fait d'être au volant d'une PORSCHE. <br> Vous ne serez plus jamais la même personne après cette expérience !
+            </p>
+            <a href="#contact" class="discover-link">
+              <span>Contactez-nous</span>
+              <img src="ressources/right-chevron.svg" alt="right chevron" />
+            </a>
+          </div>
+          <img
+            src="ressources/vertical-porsche.jpg"
+            alt="porsche car"
+            class="discover-main-img"
+          />
+        </div>
+      </section>
+
+      <section id="models" class="side-apparition">
+        <h2 >Découvrez les modèles.</h2>
+        <p class="section-subtitle">Choisissez votre préféré.</p>
+
+        <div class="side-apparition-container">
+          <div class="side-slide-content">
+            <h3>718 Cayman.</h3>
+            <p>
+              Les modèles 718 évoluent au coeur de la sportivité. Pour mieux conquérir les routes du monde, ces roadsters à moteur central, dans l’esprit de la légendaire Porsche 718, unissent un passé légendaire à l’avenir des modèles sportifs. Leur objectif : libérer le quotidien de sa banalité.
+            </p>
+          </div>
+          <img src="ressources/side-1.jpg" alt="porsche car" />
+        </div>
+
+        <div class="side-apparition-container">
+          <img src="ressources/side-2.jpg" alt="porsche car" />
+          <div class="side-slide-content">
+            <h3>Panamera.</h3>
+            <p>
+              Une voiture de sport pour 4 personnes ? Avec des performances impressionnantes et un grand confort ? Avec une dynamique typiquement Porsche et en même temps un moteur encore plus efficace ? Impossible pour certains. Courageux pour d'autres.
+            </p>
+          </div>
+        </div>
+
+        <div class="side-apparition-container">
+          <div class="side-slide-content">
+            <h3>The 911.</h3>
+            <p>
+              La Porsche 911 est une voiture de sport haut de gamme. La première génération est commercialisée en 1964. Soixante ans plus tard, ce modèle, emblématique de la marque, a conservé son esthétique générale.
+            </p>
+          </div>
+          <img src="ressources/side-3.jpg" alt="porsche car" />
+        </div>
+      </section>
+
+       <!-- Contact
+    ================================================== -->
+
+    <section id="contact">
+
+      <h2 class="grey">CONTACT</h2>
+
+
+      <div id="contacts">
+
+          <form id="contactForm">
+
+              <!-- Honeypot -->
+              <input type="text" name="_honey" style="display: none;">
+
+              <!-- Captcha -->
+              <input type="hidden" name="_captcha" value="false">
+
+              <input type="hidden" name="_next" value="https://stephsoffiati65.github.io/Devfolio/messageEnvoye.html">
+
+
+              <div>
+                  <input name="Nom" type="text" placeholder="Nom" required>
+              </div>
+              <div>
+                  <input name="Prénom" type="text" placeholder="Prénom" required>
+              </div>
+              <div>
+                  <input name="Téléphone" type="number" placeholder="Téléphone (optionnel)">
+              </div>
+              <div>
+                  <input name="Mail" type="email" id="contactEmail" placeholder="Mail" required>
+              </div>
+              <div>
+                  <textarea name="Message" id="contactMessage" placeholder="Message"></textarea>
+              </div>
+              <div id="envoyer">
+                  <button>ENVOYER</button>
+              </div>
+
+          </form> <!-- Form End -->
+
+      </div>
+
+  </section>
+
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
