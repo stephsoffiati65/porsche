@@ -374,15 +374,16 @@ h2.active,
 
 #contactForm button{
   font-family: "Raleway";
-  width: 30%;
-  height: 65px;
+  width: 25%;
+  height: 35px;
   margin-top: 50px;
   color: white;
   background-color: transparent;
   font-size: 20px;
   letter-spacing: 10px;
   cursor: pointer;
-  border: 1px solid white
+  border: 1px solid white;
+  
 }
 
 #envoyer {
